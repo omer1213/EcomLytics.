@@ -143,7 +143,7 @@ function Header() {
     }, [mobileMenuOpen])
 
     const navigationItems = [
-        { href: "/products", label: "Dashboard", icon: Home },
+        { href: "/dashboard", label: "Dashboard", icon: Home },
         { href: "/aiwriter", label: "AI Writer", icon: PenTool },
         { href: "/profitcalculator", label: "Profit Calculator", icon: Calculator },
         { href: "/about", label: "About", icon: Info },
@@ -159,9 +159,9 @@ function Header() {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="fixed w-full z-50 bg-white/90 backdrop-blur-lg border-b border-yellow-100 shadow-sm"
+                className="sticky w-full z-50 bg-white/90 backdrop-blur-lg border-b border-yellow-100 shadow-sm"
             >
-                <div className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+                <div className="container mx-auto px-4 py-3 sm:py-4 flex justify-between items-center ">
                     <Link href="/" className="text-2xl font-bold text-yellow-600 flex-shrink-0">
                         <Image
                             src="/logo.png"
