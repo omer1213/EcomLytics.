@@ -182,7 +182,6 @@ import { useRef, useEffect, useState } from "react"
 import { useAuth, useUser } from "@clerk/nextjs"
 import { supabase } from "@/lib/supabase"
 import { v4 as uuidv4 } from "uuid"
-import { format } from "date-fns"
 
 // Import components from the local components folder
 import { Sidebar } from "./components/sidebar"
