@@ -211,7 +211,7 @@
 
 //V0 with corrct path
 // Updated route.ts file - place this at app/api/chat/route.ts
-import { groq } from "@ai-sdk/groq";
+//import { groq } from "@ai-sdk/groq";
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
 

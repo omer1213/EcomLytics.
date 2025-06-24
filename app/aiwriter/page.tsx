@@ -194,21 +194,21 @@ import { MobileChatToggle } from "./components/mobile-chat-toggle"
 import { useAIWriter } from "./hooks/use-ai-writer"
 
 // Define types for our database entities
-interface Chat {
-    id: number
-    title: string
-    message_content: string
-    created_at: string
-    updated_at: string
-}
+// interface Chat {
+//     id: number
+//     title: string
+//     message_content: string
+//     created_at: string
+//     updated_at: string
+// }
 
-interface Message {
-    id: number
-    chat_id: number
-    role: string
-    content: string
-    created_at: string
-}
+// interface Message {
+//     id: number
+//     chat_id: number
+//     role: string
+//     content: string
+//     created_at: string
+// }
 
 export default function AIWriterPage() {
     const {
@@ -234,7 +234,7 @@ export default function AIWriterPage() {
     const { user } = useUser()
     const [name, setName] = useState("")
     const messagesEndRef = useRef<HTMLDivElement>(null)
-
+     console.log("name", name);
     useEffect(() => {
         if (messagesEndRef.current) {
             messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
@@ -282,13 +282,13 @@ export default function AIWriterPage() {
         }
     }, [originalIsSignedIn, user])
 
-    const formatDate = (dateString: string) => {
-        try {
-            return format(new Date(dateString), "MMM d, yyyy")
-        } catch (e) {
-            return "Invalid date"
-        }
-    }
+    // const formatDate = (dateString: string) => {
+    //     try {
+    //         return format(new Date(dateString), "MMM d, yyyy")
+    //     } catch (e) {
+    //         return "Invalid date"
+    //     }
+    // }
 
     return (
         <div className="min-h-screen bg-[#fffbeb] flex pt-16 sm:pt-20">
