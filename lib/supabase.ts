@@ -356,15 +356,24 @@ export async function getAllCategories(): Promise<string[]> {
       throw error
     }
 
+    // if (data && data.length > 0) {
+    //   const categories = [
+    //     ...new Set(
+    //       data
+    //         .map((item) => item.Category)
+    //         .filter((cat) => cat && typeof cat === "string" && cat.trim())
+    //         .map((cat) => cat.trim()),
+    //     ),
+    //   ].sort()
+
+    //   console.log("✅ Strategy 3 SUCCESS:", categories.length, "categories")
     if (data && data.length > 0) {
-      const categories = [
-        ...new Set(
-          data
-            .map((item) => item.Category)
-            .filter((cat) => cat && typeof cat === "string" && cat.trim())
-            .map((cat) => cat.trim()),
-        ),
-      ].sort()
+      const categories = Array.from(new Set(
+        data
+          .map((item) => item.Category)
+          .filter((cat) => cat && typeof cat === "string" && cat.trim())
+          .map((cat) => cat.trim()),
+      )).sort()
 
       console.log("✅ Strategy 3 SUCCESS:", categories.length, "categories")
 
@@ -895,6 +904,16 @@ async function getMixedProductsPaginated(page = 1, limit = 24, filters?: any): P
     const hasNextPage = page < totalPages
     const hasPrevPage = page > 1
 
+    // console.log("✅ Mixed paginated results:", {
+    //   page,
+    //   productsFound: paginatedProducts.length,
+    //   totalCount: count,
+    //   totalPages,
+    //   hasNextPage,
+    //   hasPrevPage,
+    //   categoriesInPage: [...new Set(paginatedProducts.map((p) => p.Category))].length,
+    // })
+
     console.log("✅ Mixed paginated results:", {
       page,
       productsFound: paginatedProducts.length,
@@ -902,7 +921,7 @@ async function getMixedProductsPaginated(page = 1, limit = 24, filters?: any): P
       totalPages,
       hasNextPage,
       hasPrevPage,
-      categoriesInPage: [...new Set(paginatedProducts.map((p) => p.Category))].length,
+      categoriesInPage: Array.from(new Set(paginatedProducts.map((p) => p.Category))).length,
     })
 
     return {

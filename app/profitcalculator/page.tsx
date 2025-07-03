@@ -88,7 +88,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-10">
+    <div className="min-h-screen bg-gray-50">
       <Toaster />
       <div className="relative bg-gradient-to-r from-blue-600 to-yellow-500 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/20 bg-[size:20px_20px] opacity-20"></div>

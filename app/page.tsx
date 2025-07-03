@@ -448,7 +448,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-yellow-50 to-white">
-      <main className="flex-grow pt-20">
+      <main className="flex-grow ">
         {/* Hero Section */}
         <motion.section
           initial="initial"
@@ -465,7 +465,7 @@ export default function Home() {
                 <p className="text-lg sm:text-xl mb-8 text-yellow-800">
                   Discover trending products, optimize descriptions with AI, and maximize profits all in one platform
                 </p>
-                <Link href="/products">
+                <Link href="/dashboard">
                   <Button
                     size="lg"
                     className="w-full sm:w-auto bg-yellow-500 text-white hover:bg-yellow-600 transition-colors text-lg px-8 py-4 rounded-full"
@@ -579,12 +579,14 @@ export default function Home() {
                     </motion.li>
                   ))}
                 </ul>
+                <Link href="/aiwriter">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto bg-yellow-500 text-white hover:bg-yellow-600 transition-colors text-lg px-8 py-4 rounded-full"
                 >
                   Try AI Writer Now <ArrowRight className="ml-2" />
                 </Button>
+                </Link>
               </motion.div>
               <motion.div variants={scaleIn} className="lg:w-1/2 relative mt-10 lg:mt-0">
                 <Image
@@ -747,7 +749,7 @@ export default function Home() {
               Join thousands of successful sellers using Ecomlytics to drive their business forward.
             </motion.p>
             <motion.div variants={scaleIn}>
-              <Link href="/products">
+              <Link href="/dashboard">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto bg-white text-yellow-500 hover:bg-yellow-100 transition-colors text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full"
