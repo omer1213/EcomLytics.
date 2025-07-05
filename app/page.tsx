@@ -695,16 +695,16 @@ export default function Home() {
                   image: "/omer.PNG",
                 },
                 {
-                  name: "Jane Smith",
+                  name: "Talha Nadeem",
                   role: "Marketing Manager",
                   quote: "The trend analysis feature helped us identify our next bestseller. Incredible tool!",
-                  image: "/testimonial-2.jpg",
+                  image: "/talha.PNG",
                 },
                 {
-                  name: "Mike Johnson",
+                  name: "Muhammad Faizan",
                   role: "Online Store Owner",
                   quote: "The profit calculator is a game-changer. I can now make informed decisions quickly.",
-                  image: "/testimonial-3.jpg",
+                  image: "/faizan.PNG",
                 },
               ].map((testimonial, index) => (
                 <motion.div
