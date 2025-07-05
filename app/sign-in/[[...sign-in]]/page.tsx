@@ -11,7 +11,7 @@ export default function SignInPage() {
                     },
                 }}
                 path="/sign-in"
-                signUpUrl="" // Empty to disable sign-up link
+                signUpUrl="/sign-up" 
                 redirectUrl="/" // Redirect to home after sign-in
             />
         </div>
