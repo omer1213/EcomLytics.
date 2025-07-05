@@ -297,7 +297,7 @@ export default function Dashboard() {
                                   Inventory Value
                                 </p>
                                 <p className="text-2xl font-bold text-yellow-600">
-                                  ${calculationData.inventoryValue.toFixed(2)}
+                                {calculationData.inventoryValue.toFixed(2)}
                                 </p>
                               </div>
                               <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
@@ -305,7 +305,7 @@ export default function Dashboard() {
                                   Potential Revenue
                                 </p>
                                 <p className="text-2xl font-bold text-green-600">
-                                  ${calculationData.potentialRevenue.toFixed(2)}
+                                {calculationData.potentialRevenue.toFixed(2)}
                                 </p>
                               </div>
                             </div>

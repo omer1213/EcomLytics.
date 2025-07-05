@@ -40,7 +40,7 @@ const ResultsSection = ({ data }: { data: ResultsData }) => {
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-xs font-medium text-gray-500 mb-1">Revenue</p>
-                <p className="text-2xl font-bold text-gray-800">${totalRevenue.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-800">Rs.{totalRevenue.toFixed(2)}</p>
               </div>
               <div className="bg-blue-100 p-2 rounded-lg">
                 <DollarSign className="h-5 w-5 text-blue-600" />
@@ -63,7 +63,7 @@ const ResultsSection = ({ data }: { data: ResultsData }) => {
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-xs font-medium text-gray-500 mb-1">Total Cost</p>
-                <p className="text-2xl font-bold text-gray-800">${totalCost.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-800"> Rs.{totalCost.toFixed(2)}</p>
               </div>
               <div className="bg-yellow-100 p-2 rounded-lg">
                 <ShoppingBag className="h-5 w-5 text-yellow-600" />
@@ -87,7 +87,7 @@ const ResultsSection = ({ data }: { data: ResultsData }) => {
               <div>
                 <p className="text-xs font-medium text-gray-500 mb-1">Profit/Loss</p>
                 <p className={`text-2xl font-bold ${isProfitPositive ? "text-green-600" : "text-red-600"}`}>
-                  ${Math.abs(profit).toFixed(2)} {!isProfitPositive && <span className="text-sm">(Loss)</span>}
+                  Rs.{Math.abs(profit).toFixed(2)} {!isProfitPositive && <span className="text-sm">(Loss)</span>}
                 </p>
               </div>
               <div className={`${isProfitPositive ? "bg-green-100" : "bg-red-100"} p-2 rounded-lg`}>
@@ -167,7 +167,7 @@ const ResultsSection = ({ data }: { data: ResultsData }) => {
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-xs font-medium text-gray-500 mb-1">Cost per Unit</p>
-                <p className="text-2xl font-bold text-gray-800">${costPerUnit.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-gray-800"> Rs.{costPerUnit.toFixed(2)}</p>
               </div>
               <div className="bg-yellow-100 p-2 rounded-lg">
                 <DollarSign className="h-5 w-5 text-yellow-600" />

@@ -197,12 +197,12 @@ const InputForm = ({ onCalculate }) => {
                   htmlFor="purchasePrice"
                   className="text-sm font-medium text-gray-700 flex items-center gap-2"
                 >
-                  <DollarSign className="h-4 w-4 text-blue-500" />
+                  {/* <DollarSign className="h-4 w-4 text-blue-500" /> */}
                   Purchase Price per Unit
                 </Label>
                 <div className="relative">
                   <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
-                    $
+                    Rs.
                   </span>
                   <Input
                     type="number"
@@ -233,12 +233,12 @@ const InputForm = ({ onCalculate }) => {
                   htmlFor="sellingPrice"
                   className="text-sm font-medium text-gray-700 flex items-center gap-2"
                 >
-                  <DollarSign className="h-4 w-4 text-blue-500" />
+                  {/* <DollarSign className="h-4 w-4 text-blue-500" /> */}
                   Selling Price per Unit
                 </Label>
                 <div className="relative">
                   <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
-                    $
+                    Rs.
                   </span>
                   <Input
                     type="number"
@@ -343,7 +343,7 @@ const InputForm = ({ onCalculate }) => {
               </Label>
               <div className="relative">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
-                  $
+                   Rs.
                 </span>
                 <Input
                   type="number"

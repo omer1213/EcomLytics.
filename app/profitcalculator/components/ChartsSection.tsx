@@ -2407,7 +2407,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                   // Safely convert the unknown value to a number
                   const value =
                     typeof context.raw === "number" ? context.raw : 0;
-                  return `$${value.toFixed(2)}`;
+                  return `${value.toFixed(2)}`;
                 },
               },
             },
@@ -2476,7 +2476,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                   // Safely convert the unknown value to a number
                   const value =
                     typeof context.raw === "number" ? context.raw : 0;
-                  return `$${value.toFixed(2)}`;
+                  return `${value.toFixed(2)}`;
                 },
               },
             },
@@ -2489,7 +2489,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                 drawBorder: false,
               },
               ticks: {
-                callback: (value) => "$" + value,
+                callback: (value) => "R.s" + value,
               },
             },
             x: {
@@ -2695,7 +2695,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                     if (context.datasetIndex === 2) {
                       return `Selected Price Point`;
                     }
-                    return `${context.dataset.label}: $${value.toFixed(2)}`;
+                    return `${context.dataset.label}: ${value.toFixed(2)}`;
                   },
                   title: (items: TooltipItem<"line">[]) => {
                     return items.length > 0
