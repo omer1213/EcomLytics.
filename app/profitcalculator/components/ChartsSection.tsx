@@ -2713,7 +2713,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                   drawBorder: false,
                 },
                 ticks: {
-                  callback: (value) => "$" + value,
+                  callback: (value) => "Rs." + value,
                 },
               },
               x: {
@@ -2980,7 +2980,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                           units
                         </p>
                         <p className="text-sm text-gray-500 mt-1">
-                          Value: $
+                          Value: Rs.
                           {(
                             Number(data.sellingPrice) *
                             (Number(data.quantity) - Number(data.quantityLeft))
@@ -2995,7 +2995,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                           {Number(data.quantityLeft)} units
                         </p>
                         <p className="text-sm text-gray-500 mt-1">
-                          Potential Value: $
+                          Potential Value: Rs.
                           {(
                             Number(data.sellingPrice) *
                             Number(data.quantityLeft)
@@ -3084,23 +3084,23 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
                           <p className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-1">
-                            <DollarSign className="h-4 w-4 text-blue-500" />
+                            {/* <DollarSign className="h-4 w-4 text-blue-500" /> */}
                             New Price per Unit
                           </p>
                           <p className="text-2xl font-bold text-blue-600">
-                            ${simulationResults.newPrice.toFixed(2)}
+                            Rs.{simulationResults.newPrice.toFixed(2)}
                           </p>
                           <p className="text-sm text-gray-500 mt-1">
-                            Original: ${Number(data.sellingPrice).toFixed(2)}
+                            Original: Rs.{Number(data.sellingPrice).toFixed(2)}
                           </p>
                         </div>
                         <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
                           <p className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-1">
-                            <DollarSign className="h-4 w-4 text-green-500" />
+                            {/* <DollarSign className="h-4 w-4 text-green-500" /> */}
                             Potential Revenue
                           </p>
                           <p className="text-2xl font-bold text-green-600">
-                            ${simulationResults.potentialRevenue.toFixed(2)}
+                            Rs.{simulationResults.potentialRevenue.toFixed(2)}
                           </p>
                           <p className="text-sm text-gray-500 mt-1">
                             From {Number(data.quantityLeft)} units
@@ -3125,7 +3125,7 @@ const ChartsSection = ({ data }: { data: ChartData }) => {
                             %
                           </p>
                           <p className="text-sm text-gray-500 mt-1">
-                            ${simulationResults.profitIncrease.toFixed(2)}
+                            Rs.{simulationResults.profitIncrease.toFixed(2)}
                           </p>
                         </div>
                       </div>
