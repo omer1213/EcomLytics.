@@ -10,7 +10,7 @@ export default function SignInPage() {
                         card: "shadow-lg rounded-lg",
                     },
                 }}
-                path="/signin"
+                path="/sign-in"
                 signUpUrl="" // Empty to disable sign-up link
                 redirectUrl="/" // Redirect to home after sign-in
             />
