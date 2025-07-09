@@ -40,7 +40,7 @@ function Footer() {
                         <ul className="space-y-2">
 
                             <li>
-                                <Link href="#" className="text-sm sm:text-base hover:text-yellow-500 transition-colors">
+                                <Link href="/aiwriter" className="text-sm sm:text-base hover:text-yellow-500 transition-colors">
                                     AI Description Writer
                                 </Link>
                             </li>
