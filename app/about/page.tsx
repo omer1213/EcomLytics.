@@ -86,7 +86,7 @@ export default function About() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">Ready to elevate your e-commerce game?</h2>
                         <Link
-                            href="/signup"
+                            href="/dashboard"
                             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 transition-colors"
                         >
                             Get Started
